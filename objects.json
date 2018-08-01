@@ -1,0 +1,31 @@
+[
+    {
+       "givenNames": 'Mr. Veggie Burger', 
+       "surName": 'burger',
+       "status": 'single', 
+       "age": 19, 
+       "occupation": 'aggravating people',
+   },
+   { 
+       "givenNames": 'Mr. Pineapple Burger', 
+       surName: 'pineapple', 
+       status: 'married', 
+       age: 27, 
+       occupation: 'lifting up people'
+   },
+   {
+      givenNames: 'Ms. Chocolate Cake', 
+      surName: 'cake', 
+      status: 'single', 
+      age: 22, 
+      occupation: 'twerking'
+  },
+  { 
+      givenNames: 'Ms. Fascinating Flower', 
+      surName: 'flower', 
+      status: 'married', 
+      age: 37, 
+      occupation: 'painting'
+  }
+]; 
+
