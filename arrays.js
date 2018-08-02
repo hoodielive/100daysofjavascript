@@ -12,7 +12,7 @@ console.log(typeof(array1));
 
 function figureThisOut() { 
     array1.filter(function(array) { 
-        if( ! array1 == typeof "object" ) {  
+        if( ! array1 !== typeof "object" ) {  
             console.log('you have the wrong type for this operation') 
         }
         else {
