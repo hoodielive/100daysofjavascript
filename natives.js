@@ -21,4 +21,14 @@
  * new Error() 
  **/ 
 
+var foo = new String("foo"); 
+console.log(foo); 
+console.log(typeof(foo)); 
+console.log(foo instanceof String); 
+//console.log(foo instanceof string); 
 
+foo = String("foo"); 
+console.log(typeof foo); 
+
+foo = new Number(37); 
+console.log(typeof foo); 
