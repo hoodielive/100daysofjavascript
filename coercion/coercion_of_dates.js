@@ -6,6 +6,7 @@ var foo = "foo"; // ~N -> -(N+1)
 
 console.log(foo);
 
+// search for a substring -> don't use to check for booleans indexOf is used to return a 'number'
 if (~foo.indexOf("f")) {
     console.log("found it");
 } 
