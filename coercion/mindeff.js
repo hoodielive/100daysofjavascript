@@ -16,3 +16,23 @@ console.log(foo);
 
 foo = baz - ""; 
 foo; 
+
+
+var foo = "123";
+if (foo) {
+    console.log("sure.."); 
+} 
+
+foo = 0; 
+
+if (foo) {
+    console.log("Right..."); 
+} 
+
+if (foo == false) {
+    debugger; 
+    console.log("Yeah..."); 
+}
+
+var baz = foo || "foo"; 
+console.log(baz); 
