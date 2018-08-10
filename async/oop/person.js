@@ -1,11 +1,11 @@
 
 const person = function() { 
 
-    return "something to see in the console"
+//    return "something to see in the console"
 }
 
 
-const me = person(); 
+const me = new person(); 
 
 
 console.log(me) 
