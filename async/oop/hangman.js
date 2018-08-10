@@ -26,7 +26,6 @@ Hangman.prototype.getPuzzle = function() {
 } 
 
 
-
 const game01 = new Hangman('joe', 2); 
 
 console.log(game01); 
