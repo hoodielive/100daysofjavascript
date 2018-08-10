@@ -1,12 +1,11 @@
 
-const person = function() { 
+const person = function(firstname) { 
     
-    console.log(this)         
-
+    this.firstname = firstname; 
 }
 
 
-const me = new person(); 
+const me = new person('Larry'); 
 
 
 console.log(me) 
