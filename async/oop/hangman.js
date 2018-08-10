@@ -12,7 +12,7 @@ const Hangman = function(word, guesses, guessedLetters) {
 Hangman.prototype.getPuzzle = function() { 
     let puzzle = ''
 
-    this.word.forEach(() => { 
+    this.word.forEach((letter) => { 
         if (this.guessedLetters.includes(letter) || letter === ' ') { 
             puzzle += letter 
         }
@@ -28,9 +28,9 @@ Hangman.prototype.getPuzzle = function() {
 
 const game01 = new Hangman('joe', 2); 
 
-console.log(game01); 
+console.log(game01.getPuzzle()); 
 
 const game02 = new Hangman('jee', 3); 
 
-console.log(game02); 
+console.log(game02.getPuzzle()); 
 
