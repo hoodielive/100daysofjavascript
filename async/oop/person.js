@@ -1,7 +1,10 @@
 
 const person = function() { 
+    
+    constructor() { 
+        
+    } 
 
-//    return "something to see in the console"
 }
 
 
