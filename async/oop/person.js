@@ -1,9 +1,7 @@
 
 const person = function() { 
     
-    constructor() { 
-        
-    } 
+    console.log(this)         
 
 }
 
