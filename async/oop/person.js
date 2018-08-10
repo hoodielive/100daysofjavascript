@@ -1,16 +1,24 @@
 
-const Person = function(firstname, lastname, age) { 
+const Person = function(firstname, lastname, age, likes = []) { 
 
     this.firstname = firstname; 
     this.lastname = lastname; 
     this.age = age; 
-    
+    this.likes = likes;     
 
 }
 
 
 Person.prototype.getBio = function() { 
-    return `${this.firstname} is ${this.age}` // this method is shared with all instances
+    let bio = `${this.firstname} is ${this.age}` // this method is shared with all instances
+
+    this.likes.forEach((like) => {
+
+        bio += `${this.firstname} likes ${like}.`; 
+
+    })
+
+    return bio 
 } 
 
 
@@ -20,7 +28,7 @@ Person.prototype.setName = function(fullname) {
     this.lastname = names[1] 
 }
 
-const me = new Person('Larry', 'Soul', 17); 
+const me = new Person('Larry', 'Soul', 17, ['Discoures', 'Girlies']); 
 
 me.setName('Hood Man');
 console.log(me.getBio()) 
