@@ -1,19 +1,37 @@
 
-const Hangman = function(word, numofGuesses) { 
+const Hangman = function(word, guesses, guessedLetters) { 
 
-    this.word = word; 
+    this.word = word.toLowerCase().split(''); 
 
-    this.numofGuesses = numofGuesses; 
+    this.guesses = guesses; 
+
+    this.guessedLetters = ['c']
 } 
 
 
-// inheritance - allowing instances of the constructor is nothing but prototypal inheritance - not a true class 
+Hangman.prototype.getPuzzle = function() { 
+    let puzzle = ''
 
-const instance01 = new Hangman('joe', 2); 
+    this.word.forEach(() => { 
+        if (this.guessedLetters.includes(letter) || letter === ' ') { 
+            puzzle += letter 
+        }
+        else {
+            puzzle += '*'
+        }
 
-console.log(instance01); 
+    }); 
 
-const instance02 = new Hangman('jee', 3); 
+    return puzzle; 
+} 
 
-console.log(instance02); 
+
+
+const game01 = new Hangman('joe', 2); 
+
+console.log(game01); 
+
+const game02 = new Hangman('jee', 3); 
+
+console.log(game02); 
 
