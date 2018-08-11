@@ -1,5 +1,5 @@
 
-const Hangman = function(word, guesses, guessedLetters) { 
+const Hangman = function(word, guesses) { 
 
     this.word = word.toLowerCase().split(''); 
 
